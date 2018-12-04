@@ -116,18 +116,17 @@
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          console.log(data);
 		  //var minSrc = 'http://litten.me/ins-min/' + data.link[i] + '.min.jpg';
 		  var minSrc = data.link[i];
           //var src = 'http://litten.me/ins/' + data.link[i];
 		  var src = data.link[i];
 		  
           var type = data.type[i];
-          var target = src + (type === 'video' ? '.mp4' : '.jpg');
-          src += '.jpg';
-		  console.log(target);
+          var target = location.origin + src;
+          // var target = src + (type === 'video' ? '.mp4' : '.jpg');
+          // src += '.jpg';
           liTmpl += '<figure class="thumb" itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">\
-                <a href="' + src + '" itemprop="contentUrl" data-size="640x640" data-type="' + type + '" data-target="' + target + '">\
+                <a href="' + target + '" itemprop="contentUrl" data-size="640x640" data-type="' + type + '" data-target="' + target + '">\
                   <img class="reward-img" data-type="' + type + '" data-src="' + target + '" src="'+target+'" itemprop="thumbnail" onload="lzld(this)">\
                 </a>\
                 <figcaption style="display:none" itemprop="caption description">' + data.text[i] + '</figcaption>\
@@ -137,7 +136,6 @@
         <ul class="img-box-ul">' + liTmpl + '</ul>\
         </section>';
       }
-      console.log(ulTmpl);
       document.querySelector('.instagram').innerHTML = '<div class="photos" itemscope="" itemtype="http://schema.org/ImageGallery">' + ulTmpl + '</div>';
       createVideoIncon();
       _view2.default.init();
