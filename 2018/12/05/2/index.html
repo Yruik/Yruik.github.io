@@ -176,6 +176,7 @@
         
       </header>
     
+    
     <div class="article-entry" itemprop="articleBody">
       
         <h1 id="这两天再我自己的vps上折腾tomcat服务器，其中遇到了很多坑，就意义记录下来，以便做记录和参考。"><a href="#这两天再我自己的vps上折腾tomcat服务器，其中遇到了很多坑，就意义记录下来，以便做记录和参考。" class="headerlink" title="这两天再我自己的vps上折腾tomcat服务器，其中遇到了很多坑，就意义记录下来，以便做记录和参考。"></a>这两天再我自己的vps上折腾tomcat服务器，其中遇到了很多坑，就意义记录下来，以便做记录和参考。</h1><h2 id="第一步，我有一点点基础，知道一个基本的步骤，那么，首先应该是安装jdk"><a href="#第一步，我有一点点基础，知道一个基本的步骤，那么，首先应该是安装jdk" class="headerlink" title="第一步，我有一点点基础，知道一个基本的步骤，那么，首先应该是安装jdk"></a>第一步，我有一点点基础，知道一个基本的步骤，那么，首先应该是安装<code>jdk</code></h2><h3 id="那么我们就去jdk下载网址看看。很好，有Linux-x64的版本，accept然后复制下载链接就到vps上面去下载安装了。代码："><a href="#那么我们就去jdk下载网址看看。很好，有Linux-x64的版本，accept然后复制下载链接就到vps上面去下载安装了。代码：" class="headerlink" title="那么我们就去jdk下载网址看看。很好，有Linux x64的版本，accept然后复制下载链接就到vps上面去下载安装了。代码："></a>那么我们就去<a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">jdk下载网址</a>看看。很好，有<code>Linux x64</code>的版本，<code>accept</code>然后复制下载链接就到vps上面去下载安装了。代码：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz <span class="comment">#下载</span></span><br><span class="line">tar -zxvf jdk-8u191-linux-x64.tar.gz <span class="comment">#解压</span></span><br><span class="line">mv jdk1.8.0_191 /usr/<span class="built_in">local</span>/ <span class="comment">#我一般放到此处</span></span><br></pre></td></tr></table></figure>
@@ -195,7 +196,8 @@
 <p style="text-align:right;color:rgba(30,30,30,0.3)">编辑于 <code>2018年12月5日 18点46分</code></p>
 
       
-
+      
+      
       
         <div class="page-reward">
           <a href="javascript:;" class="page-reward-btn tooltip-top">
@@ -255,11 +257,13 @@
       
 
       
+      
       <div style="margin: auto;width: 150px;height: 20px;font-size: 13px;">
           <span id="busuanzi_container_page_pv" style="color:rgba(26, 26, 26, 0.3);">
               本文总阅读量<span style="color:rgba(27, 172, 230, 0.4);" id="busuanzi_value_page_pv"></span>次
             </span>
       </div>
+      
       
       <div class="clearfix"></div>
     </div>
@@ -437,18 +441,6 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">centos,tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">centos tomcat</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">centos:tomcat</a>
               </li>
              
               <li class="article-tag-list-item">
