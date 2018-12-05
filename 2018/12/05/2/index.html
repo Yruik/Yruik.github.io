@@ -6,16 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://yruik.github.io">
-  <title>Tag: 随笔 | Yruik</title>
+  <title>centos7安装tomcat踩坑 | Yruik</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="python,java,随笔,html,javascript,centos,ubuntu,">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yruik">
-<meta property="og:url" content="https://yruik.github.io/tags/随笔/index.html">
+  <meta name="description" content="这两天再我自己的vps上折腾tomcat服务器，其中遇到了很多坑，就意义记录下来，以便做记录和参考。第一步，我有一点点基础，知道一个基本的步骤，那么，首先应该是安装jdk那么我们就去jdk下载网址看看。很好，有Linux x64的版本，accept然后复制下载链接就到vps上面去下载安装了。代码：123wget https://download.oracle.com/otn-pub/java/jd">
+<meta name="keywords" content="centos,tomcat">
+<meta property="og:type" content="article">
+<meta property="og:title" content="centos7安装tomcat踩坑">
+<meta property="og:url" content="https://yruik.github.io/2018/12/05/2/index.html">
 <meta property="og:site_name" content="Yruik">
+<meta property="og:description" content="这两天再我自己的vps上折腾tomcat服务器，其中遇到了很多坑，就意义记录下来，以便做记录和参考。第一步，我有一点点基础，知道一个基本的步骤，那么，首先应该是安装jdk那么我们就去jdk下载网址看看。很好，有Linux x64的版本，accept然后复制下载链接就到vps上面去下载安装了。代码：123wget https://download.oracle.com/otn-pub/java/jd">
 <meta property="og:locale" content="zh-tw">
+<meta property="og:image" content="https://yruik.github.io/assets/article/2/tomcat.png">
+<meta property="og:image" content="https://yruik.github.io/assets/article/2/success.png">
+<meta property="og:updated_time" content="2018-12-05T10:50:23.461Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yruik">
+<meta name="twitter:title" content="centos7安装tomcat踩坑">
+<meta name="twitter:description" content="这两天再我自己的vps上折腾tomcat服务器，其中遇到了很多坑，就意义记录下来，以便做记录和参考。第一步，我有一点点基础，知道一个基本的步骤，那么，首先应该是安装jdk那么我们就去jdk下载网址看看。很好，有Linux x64的版本，accept然后复制下载链接就到vps上面去下载安装了。代码：123wget https://download.oracle.com/otn-pub/java/jd">
+<meta name="twitter:image" content="https://yruik.github.io/assets/article/2/tomcat.png">
   
     <link rel="alternative" href="/atom.xml" title="Yruik" type="application/atom+xml">
   
@@ -151,60 +158,169 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-2" class="article article-type-post " itemscope="" itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/12/05/1/" class="archive-article-date">
-  	<time datetime="2018-12-05T08:00:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-05</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/12/05/1/">我的第一篇文章</a>
+    <h1 class="article-title" itemprop="name">
+      centos7安装tomcat踩坑
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/12/05/2/" class="archive-article-date">
+  	<time datetime="2018-12-05T08:31:17.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="这两天再我自己的vps上折腾tomcat服务器，其中遇到了很多坑，就意义记录下来，以便做记录和参考。"><a href="#这两天再我自己的vps上折腾tomcat服务器，其中遇到了很多坑，就意义记录下来，以便做记录和参考。" class="headerlink" title="这两天再我自己的vps上折腾tomcat服务器，其中遇到了很多坑，就意义记录下来，以便做记录和参考。"></a>这两天再我自己的vps上折腾tomcat服务器，其中遇到了很多坑，就意义记录下来，以便做记录和参考。</h1><h2 id="第一步，我有一点点基础，知道一个基本的步骤，那么，首先应该是安装jdk"><a href="#第一步，我有一点点基础，知道一个基本的步骤，那么，首先应该是安装jdk" class="headerlink" title="第一步，我有一点点基础，知道一个基本的步骤，那么，首先应该是安装jdk"></a>第一步，我有一点点基础，知道一个基本的步骤，那么，首先应该是安装<code>jdk</code></h2><h3 id="那么我们就去jdk下载网址看看。很好，有Linux-x64的版本，accept然后复制下载链接就到vps上面去下载安装了。代码："><a href="#那么我们就去jdk下载网址看看。很好，有Linux-x64的版本，accept然后复制下载链接就到vps上面去下载安装了。代码：" class="headerlink" title="那么我们就去jdk下载网址看看。很好，有Linux x64的版本，accept然后复制下载链接就到vps上面去下载安装了。代码："></a>那么我们就去<a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank" rel="noopener">jdk下载网址</a>看看。很好，有<code>Linux x64</code>的版本，<code>accept</code>然后复制下载链接就到vps上面去下载安装了。代码：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://download.oracle.com/otn-pub/java/jdk/8u191-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u191-linux-x64.tar.gz <span class="comment">#下载</span></span><br><span class="line">tar -zxvf jdk-8u191-linux-x64.tar.gz <span class="comment">#解压</span></span><br><span class="line">mv jdk1.8.0_191 /usr/<span class="built_in">local</span>/ <span class="comment">#我一般放到此处</span></span><br></pre></td></tr></table></figure>
+<h3 id="其实这样jdk就算是安装完成了，只是还没有添加环境变量而已，那我们来添加一下。"><a href="#其实这样jdk就算是安装完成了，只是还没有添加环境变量而已，那我们来添加一下。" class="headerlink" title="其实这样jdk就算是安装完成了，只是还没有添加环境变量而已，那我们来添加一下。"></a>其实这样jdk就算是安装完成了，只是还没有添加环境变量而已，那我们来添加一下。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile <span class="comment">#没有vim可以使用vi</span></span><br></pre></td></tr></table></figure>
+<h3 id="添加的内容为："><a href="#添加的内容为：" class="headerlink" title="添加的内容为："></a>添加的内容为：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/<span class="built_in">local</span>/jdk1.8.0_191/</span><br><span class="line"><span class="built_in">export</span> CLASSPATH=.:<span class="variable">$JAVA_HOME</span>/jre/lib/rt.jar:<span class="variable">$JAVA_HOME</span>/lib/dt.jar:<span class="variable">$JAVA_HOME</span>/lib/tools.jar</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:<span class="variable">$JAVA_HOME</span>/bin</span><br></pre></td></tr></table></figure>
+<h3 id="添加完成之后就是加载-etc-profile文件"><a href="#添加完成之后就是加载-etc-profile文件" class="headerlink" title="添加完成之后就是加载/etc/profile文件"></a>添加完成之后就是加载<code>/etc/profile</code>文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> /etc/profile</span><br><span class="line">java -version <span class="comment">#查看版本信息</span></span><br><span class="line"><span class="comment"># 输出的内容</span></span><br><span class="line"><span class="comment"># java version "1.8.0_191"</span></span><br><span class="line"><span class="comment"># Java(TM) SE Runtime Environment (build) </span></span><br><span class="line"><span class="comment"># 1.8.0_191-b12)</span></span><br><span class="line"><span class="comment"># Java HotSpot(TM) 64-Bit Server VM (build 25.191-b12, mixed mode)</span></span><br></pre></td></tr></table></figure>
+<h2 id="第二步，安装tomcat"><a href="#第二步，安装tomcat" class="headerlink" title="第二步，安装tomcat"></a>第二步，安装tomcat</h2><h3 id="我们也先去tomcat下载页面看一看。"><a href="#我们也先去tomcat下载页面看一看。" class="headerlink" title="我们也先去tomcat下载页面看一看。"></a>我们也先去<a href="https://tomcat.apache.org/download-70.cgi" target="_blank" rel="noopener">tomcat下载页面</a>看一看。</h3><p><img src="/assets/article/2/tomcat.png" alt="tomcat截图"></p>
+<h3 id="我选择的7-x版本，我看见Binary-Distributions-emmmmm，这应该就是二进制可执行文件了吧，好随便下载一个吧"><a href="#我选择的7-x版本，我看见Binary-Distributions-emmmmm，这应该就是二进制可执行文件了吧，好随便下载一个吧" class="headerlink" title="我选择的7.x版本，我看见Binary Distributions  emmmmm，这应该就是二进制可执行文件了吧，好随便下载一个吧"></a>我选择的7.x版本，我看见<code>Binary Distributions</code>  emmmmm，这应该就是二进制可执行文件了吧，好随便下载一个吧</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">wget https://www-eu.apache.org/dist/tomcat/tomcat-7/v7.0.92/bin/apache-tomcat-7.0.92.tar.gz <span class="comment">#下载</span></span><br><span class="line">tar -zxvf apache-tomcat-7.0.92.tar.gz <span class="comment">#解压</span></span><br><span class="line">mv apache-tomcat-7.0.92 /usr/<span class="built_in">local</span>/tomcat7 <span class="comment">#移动并重命名</span></span><br></pre></td></tr></table></figure>
+<h3 id="现在tomcat就被安装上了，tomcat是用脚本启动的，他的启动脚本再tomcat-bin目录下，但是我们需要先做一些点准备工作："><a href="#现在tomcat就被安装上了，tomcat是用脚本启动的，他的启动脚本再tomcat-bin目录下，但是我们需要先做一些点准备工作：" class="headerlink" title="现在tomcat就被安装上了，tomcat是用脚本启动的，他的启动脚本再tomcat/bin目录下，但是我们需要先做一些点准备工作："></a>现在tomcat就被安装上了，tomcat是用脚本启动的，他的启动脚本再<code>tomcat/bin</code>目录下，但是我们需要先做一些点准备工作：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /usr/<span class="built_in">local</span>/tomcat7/bin <span class="comment">#进入脚本所在的目录</span></span><br><span class="line">chmod +x * <span class="comment">#将所有文件都加上执行权限</span></span><br><span class="line">./startup.sh <span class="comment">#tomcat提供了linux下和windows下的执行脚本，linux是sh，windows下是bat</span></span><br></pre></td></tr></table></figure>
+<h3 id="执行启动脚本之后发现出错了，提示："><a href="#执行启动脚本之后发现出错了，提示：" class="headerlink" title="执行启动脚本之后发现出错了，提示："></a>执行启动脚本之后发现出错了，提示：</h3><p><code>Neither the JAVA_HOME nor the JRE_HOME environment variable is defined<br>At least one of these environment variable is needed to run this program</code></p>
+<h3 id="大概意思是tomcat不知道jjava的路径，那我们tomcat-bin-setclasspath-sh里面添加java路径就行了"><a href="#大概意思是tomcat不知道jjava的路径，那我们tomcat-bin-setclasspath-sh里面添加java路径就行了" class="headerlink" title="大概意思是tomcat不知道jjava的路径，那我们tomcat/bin/setclasspath.sh里面添加java路径就行了"></a>大概意思是tomcat不知道jjava的路径，那我们<code>tomcat/bin/setclasspath.sh</code>里面添加java路径就行了</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim setclasspath.sh</span><br></pre></td></tr></table></figure>
+<h3 id="添加这两行内容"><a href="#添加这两行内容" class="headerlink" title="添加这两行内容:"></a>添加这两行内容:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_HOME=/usr/<span class="built_in">local</span>/jdk1.8.0_191</span><br><span class="line"><span class="built_in">export</span> JRE_HOME=/usr/<span class="built_in">local</span>/jdk1.8.0_191/jre</span><br></pre></td></tr></table></figure>
+<h3 id="保存之后再次运行-startup-sh，输出信息："><a href="#保存之后再次运行-startup-sh，输出信息：" class="headerlink" title="保存之后再次运行./startup.sh，输出信息："></a>保存之后再次运行<code>./startup.sh</code>，输出信息：</h3><p><code><br>Using CATALINA_BASE:   /usr/local/tomcat<br>Using CATALINA_HOME:   /usr/local/tomcat<br>Using CATALINA_TMPDIR: /usr/local/tomcat/temp<br>Using JRE_HOME:        /usr/local/jdk1.8.0_191/jre<br>Using CLASSPATH:       /usr/local/tomcat/bin/bootstrap.jar:/usr/local/tomcat/bin/tomcat-juli.jar<br>Tomcat started.<br></code></p>
+<h3 id="嗯，到这里应该就成功了吧，访问我http-vpsip地址-8080-欸嘿，成功了"><a href="#嗯，到这里应该就成功了吧，访问我http-vpsip地址-8080-欸嘿，成功了" class="headerlink" title="嗯，到这里应该就成功了吧，访问我http://vpsip地址:8080 ,欸嘿，成功了"></a>嗯，到这里应该就成功了吧，访问我<a href="http://vpsip地址:8080" target="_blank" rel="noopener">http://vpsip地址:8080</a> ,欸嘿，成功了</h3><p><img src="/assets/article/2/success.png" alt="成功之后的样子"></p>
+<h2 style="color:rgba(240,80,60,0.6)">好了，这样就完成了,踩的坑以后再整理补上。</h2>
+
+<p style="text-align:right;color:rgba(30,30,30,0.3)">编辑于 <code>2018年12月5日 18点46分</code></p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢老板<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wechat.jpg">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">centos</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">tomcat</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+      <div style="margin: auto;width: 150px;height: 20px;font-size: 13px;">
+          <span id="busuanzi_container_page_pv" style="color:rgba(26, 26, 26, 0.3);">
+              本文总阅读量<span style="color:rgba(27, 172, 230, 0.4);" id="busuanzi_value_page_pv"></span>次
+            </span>
+      </div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2018/12/05/1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">我的第一篇文章</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+
+  
+  <div id="gitment-ctn"></div> 
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: location.href,
+  owner: 'Yruik',
+  repo: 'githubPageComments',
+  oauth: {
+    client_id: '3fba796d60cf84fe1feb',
+    client_secret: '70621d10913b7e5a455a344161299c4d1be5b961',
+  },
+})
+gitment.render('gitment-ctn')
+</script>
+  
 
 
           </div>
@@ -229,9 +345,9 @@
 	var yiliaConfig = {
 		mathjax: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
