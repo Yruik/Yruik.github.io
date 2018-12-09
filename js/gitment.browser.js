@@ -133,7 +133,7 @@ if ((typeof __MOBX_DEVTOOLS_GLOBAL_HOOK__ === "undefined" ? "undefined" : _typeo
 }
 module.exports.default = module.exports;
 var actionFieldDecorator = createClassPropertyDecorator(function (target, key, value, args, originalDescriptor) {
-    var actionName = args && args.length === 1 ? args[0] : value.name || key || "<unnamed action="">";
+    var actionName = args && args.length === 1 ? args[0] : value.name || key || '<unnamed action="">';
     var wrappedAction = action(actionName, value);
     addHiddenProp(target, key, wrappedAction);
 }, function (key) {
